@@ -2,6 +2,77 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  background-image: url("/assets/0.jpg");
+  background-color: #cccccc;
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+ h1 {
+text-align: center;
+color: white;
+ }
+
+h1 mark {
+background-color: yellow;
+}
+.free {
+color: white;
+font-size: 23px;
+}
+.free mark {
+background-color: orange;
+}
+.explanation {
+font-size: 130%;
+}
+
+.steps{
+font-size: 110%;
+}
+
+.btn {
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color: black;
+color: white;
+font-size: 16px;
+padding: 16px 30px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+}
+
+.btn:hover {
+background-color: white;
+color: white;
+}
+
+.all {
+  border-left: 6px solid red;
+  background-color: lightblue;
+  width: 90%;
+  position: absolute;
+  left: 40px;
+  top: 250px;
+}
+
+#border {
+  width: 550px;
+  padding: 10px;
+  margin: 50px;
+  border: 5px solid black;
+  background-color: #FFE4C4;
+}
+
 form label, form input {
 width:50%;
 display:block;

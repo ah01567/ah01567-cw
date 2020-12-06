@@ -1,8 +1,38 @@
-<h1> <%= t('.title') %> </h1>
-<p> <%= t('.explanation') %> </p>
-<p> <%= t('.Step1') %> </p>
-<p> <%= t('.Step2') %> </p>
-<p> <%= t('.Step3') %> </p>
-<p> <%= t('.Step4') %> </p>
-<p> <%= t('.Step5') %> </p>
-<p> <%= t('.Suggestions') %> </p>
+<!DOCTYPE html>
+<html>
+<head>
+<h1> <mark> <%= t('.title') %> </mark> </h1>
+</head>
+<body>
+
+<button class="btn" onclick="myFunction()">Show/Hide steps</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("points");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+<div id="points" class = "all" >
+<div class="explanation"> <%= t('.explanation') %> </div>
+<div class="steps">
+<br>
+<ul>
+<li> <%= t('.Step1') %> </li>
+<li> <%= t('.Step2') %> </li>
+<li> <%= t('.Step3') %> </li>
+<li> <%= t('.Step4') %> </li>
+<li> <%= t('.Step5') %> </li>
+<li> <%= t('.Suggestions') %></li>
+</ul>
+</div>
+</div>
+
+</body>
+</html>
