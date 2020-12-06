@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+surrey = Uni.where(name: 'Surrey').first
+surrey.delete if surrey
+unis = Uni.create([name: 'Surrey', location: 'Guildford'])
