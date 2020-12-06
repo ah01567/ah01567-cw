@@ -31,4 +31,15 @@
 
 en:
   app_title: Ah01567Com2025Project
-  app_description: This is ahmed's application. 
+  app_description: This is ahmed's application.
+
+  home:
+    home:
+      title: University Admission !
+      explanation: Have you just finished your high school education but don't know which university to join ? Do you have any skills you want to explore or even develop more within any university department ? This application had been made for you ! Please look at the following steps ...
+      Step1: First, if you have any enquiries of any department field, or want to check if your certificates are accepted by any university, please refer to the Contact page and drop all your enquiries ! We are here to help.
+      Step2: If this is your first time visiting our web application, and planing to carry on the application, please SIGN IN first.
+      Step3: If you already have an account, feel free to log in and drop all the universities you have in mind and the department you want to study at after you get accepted by the university.
+      Step4: Within 2 weeks, our team will review the universities you chose, then will provide all your information and certificates to each one of them.
+      Step5: After we get your university admission, we will send a congratulation message to your email and therefore provide you with more information about your future course.
+      Suggestions: Please refer to our Suggestion page for more general informations about universities in UK and Europ.
