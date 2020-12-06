@@ -30,4 +30,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_title: Ah01567Com2025Project
+  app_description: This is ahmed's application. 
