@@ -43,3 +43,23 @@ en:
       Step4: Within 2 weeks, our team will review the universities you chose, then will provide all your information and certificates to each one of them.
       Step5: After we get your university admission, we will send a congratulation message to your email and therefore provide you with more information about your future course.
       Suggestions: Please refer to our Suggestion page for more general informations about universities in UK and Europ.
+
+    contact:
+      contacting_title: Ask our team !
+      contacting_us: If you have any enquiries about any university or department field, please feel free to ask .
+      name: "Name:"
+      put_name: Enter your name
+      telephone: "Telephone:"
+      put_telephone: Enter your telephone number
+      email: "Email:"
+      put_email: Enter your email address
+      country: "Country you want to study in:"
+      put_country: Enter the country you want to study in
+      university_name: "University name"
+      put_university_name: Enter the university you want to ask about.
+      message: "Enquiries:"
+      put_message: what are your enquiries ?
+      submit: Contact Us
+    ask_for_contact:
+       add_email: Please add your email address so we can contact you back !
+       email_sent: Thank you. Our team will be in touch with you very soon.

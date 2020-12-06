@@ -1,0 +1,27 @@
+<h1> <mark> <%= t('.contacting_title') %> </mark> </h1>
+<br>
+<p class = "free"> <mark> <%= t('.contacting_us') %> </mark></p>
+
+<div id = "border"  class = "form">
+<%= form_tag ask_for_contact_path, method: 'post' do %>
+  <%= label_tag :name, t('.name') %>
+  <%= text_field_tag :name, '', title: t('.put_name'), size: 50 %>
+
+  <%= label_tag :telephone, t('.telephone') %>
+  <%= telephone_field_tag :telephone, '', title: t('.put_telephone') %>
+
+  <%= label_tag :email, t('.email') %>
+  <%= email_field_tag :email, '', title: t('.put_email') %>
+
+  <%= label_tag :name, t('.country') %>
+  <%= text_field_tag :name, '', title: t('.put_country'), size: 50 %>
+
+  <%= label_tag :name, t('.university_name') %>
+  <%= text_field_tag :name, '', title: t('.put_university_name'), size: 50 %>
+
+  <%= label_tag :message, t('.message') %>
+  <%= text_field_tag :message, '', title: t('.put_message'), size: 100 %>
+
+  <div class = "bottona"><%= submit_tag t('.submit') %> </div>
+<% end %>
+</div>
