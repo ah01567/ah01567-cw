@@ -10,7 +10,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     get contact_url
     assert_response :success
     assert_template layout: 'application'
-    assert_select 'title', 'Ah01567Com2025Project'
+    assert_select 'title', 'University Access'
     assert_select 'h1', 'Ask our team !'
     assert_select 'p', 'If you have any enquiries about any university or department field, please feel free to ask .'
   end
