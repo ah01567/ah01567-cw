@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @uni.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @uni.location %>
+</p>
+
+<%= link_to 'Edit', edit_uni_path(@uni) %> |
+<%= link_to 'Back', unis_path %>
