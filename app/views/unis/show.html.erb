@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Name:</strong>
   <%= @uni.name %>
@@ -9,6 +7,32 @@
   <strong>Location:</strong>
   <%= @uni.location %>
 </p>
+
+<p>Departments:</p>
+<table>
+<tbody>
+<%= @uni.departments.each do |department| %>
+</tbody>
+</table>
+
+<tr></tr>
+<td>
+  <%= department.name %>
+</td>
+<td>
+  <%= link_to 'Show', department %>
+</td>
+<td>
+  <%= link_to 'Edit', edit_department_path(department) %>
+</td>
+<td>
+  <%= link_to 'Destroy', department, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</td>
+<% end %>
+<p>
+  <%= link_to 'Add Department', new_department_path(uni_id: @uni) %>
+</p>
+
 
 <%= link_to 'Edit', edit_uni_path(@uni) %> |
 <%= link_to 'Back', unis_path %>

@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_06_232207) do
+ActiveRecord::Schema.define(version: 2020_12_07_170342) do
+
+  create_table "departments", force: :cascade do |t|
+    t.integer "uni_id"
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["uni_id"], name: "index_departments_on_uni_id"
+  end
 
   create_table "unis", force: :cascade do |t|
     t.string "name", null: false
