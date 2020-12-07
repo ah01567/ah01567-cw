@@ -17,7 +17,7 @@ class UnisControllerTest < ActionDispatch::IntegrationTest
 
   test "should create uni" do
     assert_difference('Uni.count') do
-      post unis_url, params: { uni: { location: @uni.location, name: @uni.name } }
+      post unis_url, params: { uni: { location: @uni.location, name: @uni.name + " create"} }
     end
 
     assert_redirected_to uni_url(Uni.last)
