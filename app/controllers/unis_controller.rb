@@ -1,6 +1,6 @@
 class UnisController < ApplicationController
   before_action :set_uni, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_student!
   # GET /unis
   # GET /unis.json
   def index

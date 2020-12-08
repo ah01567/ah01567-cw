@@ -1,6 +1,7 @@
 class DepartmentsController < ApplicationController
   before_action :set_department, only: [:show, :edit, :update, :destroy]
   before_action :set_uni, only: [:new, :create]
+  before_action :authenticate_student!
   # GET /departments
   # GET /departments.json
   def index
