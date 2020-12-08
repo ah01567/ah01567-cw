@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :students
   resources :departments
   resources :unis
   root 'home#home'

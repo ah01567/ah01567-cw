@@ -1,6 +1,23 @@
 <div class="nav_bar">
- <a href="/">Home</a> |
- <a href="/contact">Contact</a>
- <a href="/unis">Universities</a> |
- <a href="/departments">Departments</a> 
+<nav>
+  <a href="/">Home</a> |
+  <a href="/contact">Contact</a>
+  <a href="/unis">Universities</a> |
+  <a href="/departments">Departments</a>
+
+  <% if student_signed_in? %>
+    <%= "#{current_student.email} |" %>
+    <%= link_to t('profile'), edit_student_registration_path %>
+    <%= '|' %>
+    <%= link_to t('logout'), destroy_student_session_path, method: 'delete' %>
+  <% else %>
+    <%= link_to t('login'), new_student_session_path %>
+    <%= '|' %>
+    <%= link_to t('sign_up'), new_student_registration_path %>
+  <% end %>
+</nav>
 </div>
+
+<% flash.each do |key, value| %>
+  <%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
+<% end %>
