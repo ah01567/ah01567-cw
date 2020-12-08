@@ -5,7 +5,7 @@ class DepartmentsController < ApplicationController
   # GET /departments
   # GET /departments.json
   def index
-    @departments = Department.all
+    @departments = Department.student_departments(current_student)
   end
 
   # GET /departments/1

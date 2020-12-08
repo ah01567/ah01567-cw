@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_08_200803) do
+ActiveRecord::Schema.define(version: 2020_12_08_203140) do
 
   create_table "departments", force: :cascade do |t|
     t.integer "uni_id"
@@ -37,7 +37,9 @@ ActiveRecord::Schema.define(version: 2020_12_08_200803) do
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "student_id", null: false
     t.index ["name"], name: "index_unis_on_name", unique: true
+    t.index ["student_id"], name: "index_unis_on_student_id"
   end
 
 end

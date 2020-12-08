@@ -4,7 +4,7 @@ class UnisController < ApplicationController
   # GET /unis
   # GET /unis.json
   def index
-    @unis = Uni.all
+    @unis = Uni.student_unis(current_student)
   end
 
   # GET /unis/1
@@ -25,6 +25,7 @@ class UnisController < ApplicationController
   # POST /unis.json
   def create
     @uni = Uni.new(uni_params)
+    @uni.student = current_student
 
     respond_to do |format|
       if @uni.save
