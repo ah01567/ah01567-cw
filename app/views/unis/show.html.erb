@@ -1,21 +1,28 @@
-<p>
-  <strong>Name:</strong>
-  <%= @uni.name %>
-</p>
+<table id="DBtable">
+  <thead>
+    <tr>
+      <th>
+        <strong>Name:</strong>
+      </th>
+      <th>
+        <strong>Location:</strong>
+      </th>
+      <th>
+        <strong>Departments:</strong>
+        <%= @uni.departments.each do |department| %>
+      </th>
+      <th colspan="3">Options</th>
+    </tr>
+  </thead>
 
-<p>
-  <strong>Location:</strong>
-  <%= @uni.location %>
-</p>
-
-<p>Departments:</p>
-<table>
 <tbody>
-<%= @uni.departments.each do |department| %>
-</tbody>
-</table>
-
-<tr></tr>
+<tr>
+<td>
+<%= @uni.name %>
+</td>
+<td>
+<%= @uni.location %>
+</td>
 <td>
   <%= department.name %>
 </td>
@@ -28,11 +35,19 @@
 <td>
   <%= link_to 'Destroy', department, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
 </td>
-<% end %>
-<p>
+</tr>
+</tbody>
+</table>
+
+<div id= "NewUni">
   <%= link_to 'Add Department', new_department_path(uni_id: @uni) %>
-</p>
-
-
-<%= link_to 'Edit', edit_uni_path(@uni) %> |
+</div>
+<br>
+<div id= "New">
+<%= link_to 'Edit', edit_uni_path(@uni) %>
+</div>
+<div id= "New">
 <%= link_to 'Back', unis_path %>
+</div>
+<br>
+<% end %>

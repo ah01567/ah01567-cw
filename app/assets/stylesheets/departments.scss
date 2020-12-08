@@ -1,3 +1,58 @@
 // Place all the styles related to the Departments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#DBtable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  margin-left:20%;
+  margin-top: 5%;
+
+}
+
+#DBtable td, #DBtable th {
+  background-color: #ddd;
+  border: 1px solid black;
+  padding: 10px;
+  margin: auto;
+}
+
+#DBtable tr:hover {background-color: #faebd7;}
+
+#DBtable th {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#NewUni {
+  background-color: white; /* Green */
+  border: 2px solid black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  margin-left:45%;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#New {
+  background-color: white; /* Green */
+  border: 2px solid black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
