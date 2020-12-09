@@ -62,3 +62,39 @@ en:
     ask_for_contact:
        add_email: Please add your email address so we can contact you back !
        email_sent: Thank you. Our team will be in touch with you very soon.
+
+  unis:
+    index:
+      uni: Unis
+      uni_list: Add universities names, you wish to join, on the table
+    show:
+      show_uni: Show
+      add_department_to_uni: Add departments for this university
+    edit:
+      edit_uni: Editing Uni
+      edit_your_uni: Here you can edit your university name or location
+
+  departments:
+    index:
+      department: Departments
+      department_list: List of departments for each university you chose
+    show:
+      show_department: Showing departments
+      show_your_department: These are the departments you chose for this university
+    edit:
+      edit_department: Editing department
+      edit_your_department: Here you can edit your department name ...
+
+  section:
+    footer:
+      name: 2020 Team manager contact
+      adrress: Bechar city, 08000, ALgeria
+      email: mohamed.tab@gmail.com
+      phone: call 00213551411889
+      facebook: Facebook  Moh Med
+
+    header:
+      home: Home
+      contact: Contact
+      uni: Universities
+      department: Departments
