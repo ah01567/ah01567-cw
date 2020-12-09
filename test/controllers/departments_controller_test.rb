@@ -1,9 +1,13 @@
 require 'test_helper'
 
 class DepartmentsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
     @department = departments(:one)
     @uni = unis(:one)
+    @student = students(:one)
+    sign_in @student
   end
 
   test "should get index" do

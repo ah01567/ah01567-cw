@@ -1,8 +1,12 @@
 require 'test_helper'
 
 class UnisControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
     @uni = unis(:one)
+    @student = students(:one)
+    sign_in @student
   end
 
   test "should get index" do
@@ -17,7 +21,7 @@ class UnisControllerTest < ActionDispatch::IntegrationTest
 
   test "should create uni" do
     assert_difference('Uni.count') do
-      post unis_url, params: { uni: { location: @uni.location, name: @uni.name + " create"} }
+      post unis_url, params: { uni: { location: @uni.location, name: @uni.name + " create", student_id: @student.id} }
     end
 
     assert_redirected_to uni_url(Uni.last)

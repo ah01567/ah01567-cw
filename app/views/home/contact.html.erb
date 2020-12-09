@@ -22,6 +22,12 @@
   <%= label_tag :message, t('.message') %>
   <%= text_field_tag :message, '', title: t('.put_message'), size: 100 %>
 
+
   <div class = "bottona"><%= submit_tag t('.submit') %> </div>
 <% end %>
+  <br>
+  <br>
+  <p><b>Certificates requirments </b><span class="glyphicon glyphicon-file"></span></p>
+  <form action="/action_page.php"><input type="file" id="myFile" name="filename"></form>
+
 </div>

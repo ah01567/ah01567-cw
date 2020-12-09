@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  student: one
   name: MyString_a
   location: MyString
 
 two:
+  student: two
   name: MyString_b
   location: MyString

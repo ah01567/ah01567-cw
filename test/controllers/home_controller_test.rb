@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class HomeControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
   test "bring home page" do
     get root_url
     assert_response :success
@@ -12,7 +13,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_template layout: 'application'
     assert_select 'title', 'University Access'
     assert_select 'h1', 'Ask our team !'
-    assert_select 'p', 'If you have any enquiries about any university or department field, please feel free to ask .'
+    assert_select 'p', 'If you have any enquiries, please feel free to ask .'
   end
 
   test "post ask for contact" do

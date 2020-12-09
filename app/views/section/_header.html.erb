@@ -1,20 +1,21 @@
 <div class="nav_bar">
 <nav>
-  <a href="/">Home</a> |
-  <a href="/contact">Contact</a>
-  <a href="/unis">Universities</a> |
+  <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a> |
+  <a href="/contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
+  <a href="/unis"><span class="glyphicon glyphicon-tasks"></span> Universities</a> |
   <a href="/departments">Departments</a>
 
   <% if student_signed_in? %>
     <%= "#{current_student.email} |" %>
-    <%= link_to t('profile'), edit_student_registration_path %>
+    <%= link_to t('( profile'), edit_student_registration_path %>
     <%= '|' %>
-    <%= link_to t('logout'), destroy_student_session_path, method: 'delete' %>
+    <%= link_to t('logout )'), destroy_student_session_path, method: 'delete' %>
   <% else %>
-    <%= link_to t('login'), new_student_session_path %>
+    <%= link_to t('( login'), new_student_session_path %>
     <%= '|' %>
-    <%= link_to t('sign_up'), new_student_registration_path %>
+    <%= link_to t('sign_up )'), new_student_registration_path %>
   <% end %>
+
 </nav>
 </div>
 

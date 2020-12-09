@@ -5,5 +5,4 @@ class Student < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :unis
 
-  
 end

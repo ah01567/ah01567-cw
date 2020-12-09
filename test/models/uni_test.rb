@@ -4,6 +4,10 @@ class UniTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+  setup do
+    @student = students(:one)
+  end
+
   test 'Empty university name wont be saved' do
     uni = Uni.new
 
@@ -16,6 +20,7 @@ class UniTest < ActiveSupport::TestCase
 
     uni.name = 'Surrey'
     uni.location = 'Guildford'
+    uni.student = @student
 
     uni.save
 	  assert uni.valid?
@@ -25,12 +30,14 @@ class UniTest < ActiveSupport::TestCase
     uni1 = Uni.new
     uni1.name = 'Oxford'
 		uni1.location = 'Oxford city'
+    uni1.student = @student
     uni1.save
 		assert uni1.valid?
 
 		uni2 = Uni.new
 		uni2.name = 'Oxford'
 		uni2.location = 'Oxford city'
+    uni2.student = @student
     uni2.save
 		refute uni2.valid?
   end
