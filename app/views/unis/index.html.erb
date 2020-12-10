@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
-
+<!-- localised string refering to the uni index title -->
 <h1> <mark> <%= t('.uni') %><mark></h1><br>
+  <!-- localised string refering to the uni index paragraph -->
 <p class = "free"> <mark> <%= t('.uni_list') %> </mark></p>
-
+<!-- Creating a uni DB table holding unis names -->
 <table id="DBtable">
   <thead>
     <tr>
@@ -26,7 +27,7 @@
 </table>
 
 <br>
-
+<!-- link for ADDING A NEW UNI to the table DB -->
 <div id= "NewUni">
 <%= link_to 'New University', new_uni_path %>
 </div>

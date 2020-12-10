@@ -29,10 +29,12 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
+#These all are for localised strings used on this app
 en:
+  # Application title and description
   app_title: University Access
   app_description: This is ahmed's application.
-
+  # For Home view folder
   home:
     home:
       title: University Admission !
@@ -42,7 +44,7 @@ en:
       Step3: If you already have an account, feel free to log in and drop all the universities you have in mind and the department you want to study at after you get accepted by the university.
       Step4: Within 2 weeks, our team will review the universities you chose, then will provide all your information and certificates to each one of them.
       Step5: After we get your university admission, we will send a congratulation message to your email and therefore provide you with more information about your future course.
-
+    # for Contact file ipn the Home view folder
     contact:
       contacting_title: Ask our team !
       contacting_us: If you have any enquiries, please feel free to ask .
@@ -62,7 +64,7 @@ en:
     ask_for_contact:
        add_email: Please add your email address so we can contact you back !
        email_sent: Thank you. Our team will be in touch with you very soon.
-
+  # for uni view folder
   unis:
     index:
       uni: Unis
@@ -73,7 +75,7 @@ en:
     edit:
       edit_uni: Editing Uni
       edit_your_uni: Here you can edit your university name or location
-
+  # for department view folder
   departments:
     index:
       department: Departments
@@ -85,15 +87,16 @@ en:
     edit:
       edit_department: Editing department
       edit_your_department: Here you can edit your department name ...
-
+  # For section view folder
   section:
+    #footer localised strings
     footer:
       name: 2020 Team manager contact
       adrress: Bechar city, 08000, ALgeria
       email: mohamed.tab@gmail.com
       phone: call 00213551411889
-      facebook: Facebook  Moh Med
-
+      facebook: Facebook  Moha Med
+    # header localised strings  
     header:
       home: Home
       contact: Contact

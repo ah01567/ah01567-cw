@@ -1,6 +1,8 @@
+<!-- localised string refering to the showing title -->
 <h1> <mark> <%= t('.show_uni') %> <mark></h1><br>
+<!-- localised string refering to a paragraph in the showing -->
 <p class = "free"> <mark> <%= t('.add_department_to_uni') %> </mark></p>
-
+<!-- DB unis table in the showing page  -->
 <table id="DBtable">
   <thead>
     <tr>
@@ -23,7 +25,7 @@
         <% end %>
     </tbody>
 </table>
-
+<!-- links for EDITING and going BACK to unis page -->
 <div id= "NewUni">
   <%= link_to 'Add Department', new_department_path(uni_id: @uni) %>
 </div>

@@ -1,6 +1,12 @@
+<!-- localised string refering to the editing title -->
 <h1><mark><%= t('.edit_uni') %></mark></h1><br>
+<!-- localised string refering to the editing paragraph -->
 <p class = "free"> <mark> <%= t('.edit_your_uni') %> </mark></p><br>
 <%= render 'form', uni: @uni %>
-
+<!-- adding links for SHOWING and going back to unis page -->
+<div id= "New">
 <%= link_to 'Show', @uni %> |
+</div>
+<div id= "New">
 <%= link_to 'Back', unis_path %>
+</div>

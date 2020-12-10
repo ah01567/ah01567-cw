@@ -1,6 +1,8 @@
+<!-- localised string refering to the department show page title -->
 <h1><mark><%= t('.show_department') %></mark></h1><br><br>
+<!-- localised string refering to the department show page paragraph -->
 <p class = "free"> <mark> <%= t('.show_your_department') %> </mark></p>
-
+<!-- Create DB table holding all different departments for the same uni -->
 <table id="DBtable">
   <thead>
     <tr>
@@ -23,7 +25,7 @@
       </td>
   </tr>
 </table>
-
+<!-- adding links for EDITING and going BACK to department page -->
 <div id= "New">
 <%= link_to 'Edit', edit_department_path(@department) %> |
 </div>

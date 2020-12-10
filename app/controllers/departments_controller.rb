@@ -72,7 +72,7 @@ class DepartmentsController < ApplicationController
     def department_params
       params.require(:department).permit(:uni_id, :name)
     end
-
+    # Method to find the uni using params OR to find uni using strong params
     def set_uni
       @uni = Uni.find_by(id: params[:uni_id]) || Uni.find(department_params[:uni_id])
     end

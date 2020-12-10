@@ -1,10 +1,13 @@
 class HomeController < ApplicationController
+  # Empty home method
   def home
   end
-
+  # Empty contact method
   def contact
   end
-
+  # Method generating flash Alert if the student forget to mention
+  # his email while contacting our team for enquiries
+  # If his email is mentioned, He will recieve a confirmation alert 
   def ask_for_contact
     name = params[:name]
     telephone = params[:telephone]

@@ -1,7 +1,9 @@
-<h1> <mark> <%= t('.contacting_title') %> </mark> </h1>
+<!-- localised string title for the contact page title -->
+<h1><mark><%= t('.contacting_title') %> </mark> </h1>
 <br>
+<!-- localised string titles for the contact page paragraph -->
 <p class = "free"> <mark> <%= t('.contacting_us') %> </mark></p>
-
+<!-- localised string titles for the contact page form -->
 <div id = "border"  class = "form">
 <%= form_tag ask_for_contact_path, method: 'post' do %>
   <%= label_tag :name, t('.name') %>
@@ -21,7 +23,6 @@
 
   <%= label_tag :message, t('.message') %>
   <%= text_field_tag :message, '', title: t('.put_message'), size: 100 %>
-
 
   <div class = "bottona"><%= submit_tag t('.submit') %> </div>
 <% end %>

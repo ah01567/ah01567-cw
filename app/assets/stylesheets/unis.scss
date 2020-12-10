@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// This CSS is for the table holding database informations
 #DBtable {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -10,16 +11,15 @@
   margin-top: 5%;
 
 }
-
+// CSS for both the head and body of the table
 #DBtable td, #DBtable th {
   background-color: #ddd;
   border: 1px solid black;
   padding: 10px;
   margin: auto;
 }
-
 #DBtable tr:hover {background-color: #faebd7;}
-
+// CSS for the head of the table
 #DBtable th {
   padding-top: 10px;
   padding-bottom: 12px;
@@ -27,9 +27,9 @@
   background-color: #4CAF50;
   color: white;
 }
-
+// CSS for the link New University
 #NewUni {
-  background-color: white; /* Green */
+  background-color: white;
   border: 2px solid black;
   color: white;
   padding: 20px;
@@ -42,9 +42,9 @@
   cursor: pointer;
   border-radius: 8px;
 }
-
+// CSS for the EDIT and BACK links
 #New {
-  background-color: white; /* Green */
+  background-color: white;
   border: 2px solid black;
   color: white;
   padding: 20px;

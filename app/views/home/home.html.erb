@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h1> <mark> <%= t('.title') %> </mark> </h1>
+<h1> <mark> <%= t('.title') %> </mark></h1>
 </head>
 <body>
-
+<!-- button for showing and hiding the steps students should follow -->
 <button class="btn" onclick="myFunction()">Show/Hide steps</button>
-
+<!-- JavaScript for the functioning button -->
 <script>
 function myFunction() {
   var x = document.getElementById("points");
@@ -17,9 +17,9 @@ function myFunction() {
   }
 }
 </script>
-
-
+<!-- localised string title for the homePage title -->
 <div id="points" class = "all" >
+<!-- localised string titles for the homePage note steps -->
 <div class="explanation"> <%= t('.explanation') %> </div>
 <div class="steps">
 <br>
@@ -32,6 +32,5 @@ function myFunction() {
 </ul>
 </div>
 </div>
-
 </body>
 </html>

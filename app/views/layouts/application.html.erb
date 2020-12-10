@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Application information -->
     <title>University Access</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,10 +11,11 @@
   </head>
 
   <body>
+      <!-- Calling the header section into the application -->
       <%= render 'section/header' %>
-
+      <!-- Yield for calling all the other pages -->
       <%= yield %>
-
+      <!-- Calling the footer section into the application -->
       <%= render 'section/footer' %>
     </body>
   </html>

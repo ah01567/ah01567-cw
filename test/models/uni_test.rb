@@ -7,14 +7,18 @@ class UniTest < ActiveSupport::TestCase
   setup do
     @student = students(:one)
   end
-
+  #create a new uni
+  #try to save with 0 uni information
+  # uni info wont be saved
   test 'Empty university name wont be saved' do
     uni = Uni.new
 
     uni.save
     refute uni.valid?
   end
-
+  #Adding uni name
+  #Assigning uni for specific student
+  #Save unis that the student chose
 	test 'Save when university name given' do
     uni = Uni.new
 
@@ -25,7 +29,7 @@ class UniTest < ActiveSupport::TestCase
     uni.save
 	  assert uni.valid?
   end
-
+  #Same student cannot chose same university twice
 	test 'Dont save same university name twice' do
     uni1 = Uni.new
     uni1.name = 'Oxford'

@@ -1,7 +1,13 @@
+<!-- localised string refering to the department editing page title -->
 <h1><mark><%= t('.edit_department') %></mark></h1><br>
+<!-- localised string refering to the department editing page paragraph -->
 <p class = "free"> <mark> <%= t('.edit_your_department') %> </mark></p><br>
 
 <%= render 'form', department: @department %>
-
+<!-- adding links for SHOWING and going BACK to department index page -->
+<div id= "New">
 <%= link_to 'Show', @department %> |
+</div>
+<div id= "New">
 <%= link_to 'Back', departments_path %>
+</div>

@@ -1,4 +1,5 @@
 class LinkStudentsToUnis < ActiveRecord::Migration[5.2]
+  # These methods are for adding the association
   def up
     add_reference :unis, :student, index: true
     Uni.reset_column_information

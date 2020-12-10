@@ -6,21 +6,17 @@ class UnisController < ApplicationController
   def index
     @unis = Uni.student_unis(current_student)
   end
-
   # GET /unis/1
   # GET /unis/1.json
   def show
   end
-
   # GET /unis/new
   def new
     @uni = Uni.new
   end
-
   # GET /unis/1/edit
   def edit
   end
-
   # POST /unis
   # POST /unis.json
   def create
@@ -37,7 +33,6 @@ class UnisController < ApplicationController
       end
     end
   end
-
   # PATCH/PUT /unis/1
   # PATCH/PUT /unis/1.json
   def update
@@ -51,7 +46,6 @@ class UnisController < ApplicationController
       end
     end
   end
-
   # DELETE /unis/1
   # DELETE /unis/1.json
   def destroy
@@ -61,7 +55,7 @@ class UnisController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  # Private methods 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_uni

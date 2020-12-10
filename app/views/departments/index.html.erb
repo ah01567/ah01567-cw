@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
-
+<!-- localised string refering to the department title -->
 <h1><mark><%= t('.department') %></mark></h1><br><br>
+<!-- localised string refering to the departments index page paragraph1 -->
 <p class = "free"> <mark> <%= t('.department_list') %> </mark></p><br>
+<!-- localised string refering to the departments index page paragraph2 -->
 <p class = "free"> <mark> <%= t('.add_uni_first') %> </mark></p>
-
+<!-- Create a DB table holding departments name for each uni -->
 <table id="DBtable">
   <thead>
     <tr>
@@ -12,7 +14,6 @@
       <th colspan="3">Options</th>
     </tr>
   </thead>
-
   <tbody>
     <% @departments.each do |department| %>
       <tr>

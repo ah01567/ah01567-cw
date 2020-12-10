@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # adding the root, devise, GET and POST pages that will be
+  # generated on the application 
   devise_for :students
   resources :departments
   resources :unis
