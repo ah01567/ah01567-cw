@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1><mark><%= t('.department') %></mark></h1><br>
-<p class = "free"> <mark> <%= t('.department_list') %> </mark></p>
+<h1><mark><%= t('.department') %></mark></h1><br><br>
+<p class = "free"> <mark> <%= t('.department_list') %> </mark></p><br>
+<p class = "free"> <mark> <%= t('.add_uni_first') %> </mark></p>
 
 <table id="DBtable">
   <thead>
@@ -26,6 +27,3 @@
 </table>
 
 <br>
-
-
-<%= link_to 'New Department', new_department_path %>

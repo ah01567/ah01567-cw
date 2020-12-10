@@ -78,6 +78,7 @@ en:
     index:
       department: Departments
       department_list: List of departments for each university you chose
+      add_uni_first: Please add a department after adding specific university
     show:
       show_department: Showing departments
       show_your_department: These are the departments you chose for this university
