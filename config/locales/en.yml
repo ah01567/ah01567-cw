@@ -80,7 +80,7 @@ en:
     index:
       department: Departments
       department_list: List of departments for each university you chose
-      add_uni_first: Please add a department after adding specific university
+      add_uni_first: You can only add a department after adding specific university
     show:
       show_department: Showing departments
       show_your_department: These are the departments you chose for this university
@@ -96,7 +96,7 @@ en:
       email: mohamed.tab@gmail.com
       phone: call 00213551411889
       facebook: Facebook  Moha Med
-    # header localised strings  
+    # header localised strings
     header:
       home: Home
       contact: Contact

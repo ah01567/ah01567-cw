@@ -16,10 +16,19 @@ class UniTest < ActiveSupport::TestCase
     uni.save
     refute uni.valid?
   end
+
+  test 'Dont save when university name is not given' do
+    uni = Uni.new
+    uni.location = 'Guildford'
+    uni.student = @student
+
+    uni.save
+   refute uni.valid?
+  end
   #Adding uni name
   #Assigning uni for specific student
   #Save unis that the student chose
-	test 'Save when university name given' do
+	test 'Save when university name is given' do
     uni = Uni.new
 
     uni.name = 'Surrey'
@@ -29,6 +38,20 @@ class UniTest < ActiveSupport::TestCase
     uni.save
 	  assert uni.valid?
   end
+  #Adding uni name and location
+  #Assigning uni for specific student
+  #Save unis that the student chose
+  test 'Save when university location is given' do
+    uni = Uni.new
+
+    uni.name = 'Surrey'
+    uni.location = 'Guildford'
+    uni.student = @student
+
+    uni.save
+    assert uni.valid?
+  end
+
   #Same student cannot chose same university twice
 	test 'Dont save same university name twice' do
     uni1 = Uni.new
